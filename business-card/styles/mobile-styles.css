@@ -1,0 +1,37 @@
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+  body, html {
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 1rem;
+  }
+
+  .card-container {
+      flex-direction: column;
+      width: 90%;
+      height: auto;
+      margin: 2rem 0;
+  }
+
+  .avatar {
+      width: 150px;
+      height: 150px;
+      margin: 1rem 0;
+  }
+
+  .text-container {
+      margin: 1rem 0;
+  }
+
+  .name {
+      font-size: 24px;
+  }
+
+  .title {
+      font-size: 16px;
+  }
+
+  .social i {
+      font-size: 18px;
+  }
+}
