@@ -17,10 +17,18 @@ function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+      <h1>Get in touch</h1>
+      <p>Feel free to send me a message.</p>
+      <p> I would love to hear from you!</p>
+      <div className="App-form">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <label>Email</label>
+        <input type="email" name="email" placeholder="Your Email" required />
+        <label>Message</label>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </div>
     </form>
   );
 }
