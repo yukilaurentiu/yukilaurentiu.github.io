@@ -10,10 +10,10 @@ function ContactForm() {
     // Send the form using EmailJS
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_wuza4o8",
+        "template_ne0bpod",
         event.target,
-        "YOUR_USER_ID"
+        "wKNarYp2Gevq-MU1Z"
       )
       .then(
         (result) => {
