@@ -1,5 +1,6 @@
 import './App.css';
 import ContactForm from './components/ContactForm';
+import Example from './components/Example';
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
       <card className="App-card">
         <ContactForm/>
       </card>
+      <Example/>
     </div>
   );
 }
