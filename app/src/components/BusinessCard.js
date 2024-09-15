@@ -8,17 +8,17 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 function BusinessCard() {
   return (
     <card className="App-card">
-      <div class="contact-container">
-        <div class="contact-box">
+      <div className="card-container">
+        <div className="contact-box">
           <img className="avatar" src="/images/yuki.jpeg" alt="Avatar" />
         </div>
-        <div class="contact-box">
-          <div class="text-container">
-            <h4 class="name">
+        <div className="contact-box">
+          <div className="text-container">
+            <h4 className="name">
               <b>Yukiko Laurentiu</b>
             </h4>
-            <p class="title">Fullstack Developer</p>
-            <div class="social">
+            <p className="title">Fullstack Developer</p>
+            <div className="social">
               <a
                 href="https://www.linkedin.com/in/yukikolaurentiu"
                 target="_blank"

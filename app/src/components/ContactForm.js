@@ -27,15 +27,15 @@ function ContactForm() {
 
   return (
     <card className="App-card">
-      <div class="contact-container">
-        <div class="contact-box">
+      <div class="card-container">
+        <div className="contact-box">
           <h1>Get in touch 👋</h1>
           <div className="App-p">
             <p>Feel free to send me a message.</p>
             <p>I would love to hear from you!</p>
           </div>
         </div>
-        <div class="contact-box">
+        <div className="contact-box">
           <form onSubmit={handleSubmit} className="Contact-form">
             <label htmlFor="name">Name</label>
             <input

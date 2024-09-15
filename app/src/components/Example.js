@@ -5,6 +5,7 @@ function Example() {
   return (
    <div>
     Example
+    placeholder
    </div>
   );
 }

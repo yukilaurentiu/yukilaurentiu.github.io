@@ -15,12 +15,6 @@ function App() {
         </Routes>
       </div>
     </Router>
-    // <div className="App">
-    //   <card className="App-card">
-    //     <ContactForm/>
-    //   </card>
-    //   <Example/>
-    // </div>
   );
 }
 
