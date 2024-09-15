@@ -6,7 +6,7 @@ function BusinessCard() {
     <card className="App-card">
       <div class="contact-container">
         <div class="contact-box">
-          <img className="avatar" src="/app/build/images/yuki.jpeg" alt="Avatar" />
+          <img className="avatar" src="/images/yuki.jpeg" alt="Avatar" />
         </div>
         <div class="contact-box">
           <div class="text-container">
@@ -14,6 +14,7 @@ function BusinessCard() {
               <b>Yukiko Laurentiu</b>
             </h4>
             <p class="title">Fullstack Developer</p>
+            <p>yuuk</p>
             <div class="social">
               <a
                 href="https://www.linkedin.com/in/yukikolaurentiu"
