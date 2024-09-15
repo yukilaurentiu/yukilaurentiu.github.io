@@ -1,6 +1,6 @@
 import React from "react";
 import emailjs from "@emailjs/browser";
-import "./Contact.css";
+import "./ContactForm.css";
 
 function ContactForm() {
   // Function to handle form submission
@@ -26,46 +26,48 @@ function ContactForm() {
   };
 
   return (
-    <div class="contact-container">
-      <div class="contact-box">
-        <h1>Get in touch 👋</h1>
-        <div className="App-p">
-          <p>Feel free to send me a message.</p>
-          <p>I would love to hear from you!</p>
+    <card className="App-card">
+      <div class="contact-container">
+        <div class="contact-box">
+          <h1>Get in touch 👋</h1>
+          <div className="App-p">
+            <p>Feel free to send me a message.</p>
+            <p>I would love to hear from you!</p>
+          </div>
+        </div>
+        <div class="contact-box">
+          <form onSubmit={handleSubmit} className="Contact-form">
+            <label htmlFor="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+
+            <label htmlFor="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+
+            <label htmlFor="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Your Message"
+              required
+            ></textarea>
+
+            <button type="submit">Send</button>
+          </form>
         </div>
       </div>
-      <div class="contact-box">
-        <form onSubmit={handleSubmit} className="Contact-form">
-          <label htmlFor="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            placeholder="Your Name"
-            required
-          />
-
-          <label htmlFor="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="Your Email"
-            required
-          />
-
-          <label htmlFor="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Your Message"
-            required
-          ></textarea>
-
-          <button type="submit">Send</button>
-        </form>
-      </div>
-    </div>
+    </card>
   );
 }
 
