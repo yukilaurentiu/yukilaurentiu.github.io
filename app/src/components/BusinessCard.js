@@ -1,5 +1,9 @@
 import React from "react";
 import "./BusinessCard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 function BusinessCard() {
   return (
@@ -14,19 +18,18 @@ function BusinessCard() {
               <b>Yukiko Laurentiu</b>
             </h4>
             <p class="title">Fullstack Developer</p>
-            <p>yuuk</p>
             <div class="social">
               <a
                 href="https://www.linkedin.com/in/yukikolaurentiu"
                 target="_blank"
               >
-                <i class="fab fa-linkedin">LI</i>
+                <FontAwesomeIcon icon={faLinkedin} />
               </a>
               <a href="https://github.com/yukilaurentiu" target="_blank">
-                <i class="fa-brands fa-github">GH</i>
+                <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="https://yukilaurentiu.github.io/app/build/">
-                <i class="fa-regular fa-envelope">MA</i>
+              <a href="https://yukilaurentiu.github.io/#/contact">
+              <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div>
           </div>
