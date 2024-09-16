@@ -1,8 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactForm.css";
 
 function ContactForm() {
+  
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: ""
+  });
+
+  // State to manage success message
+  const [successMessage, setSuccessMessage] = useState("");
+  
   // Function to handle form submission
   const handleSubmit = (event) => {
     event.preventDefault(); // Prevent the default form submission
@@ -17,12 +27,26 @@ function ContactForm() {
       )
       .then(
         (result) => {
-          alert("Email sent successfully!");
+          // Show success message and clear form fields
+          setSuccessMessage("Thank you! Your message was sent successfully!");
+          setFormData({
+            name: "",
+            email: "",
+            message: ""
+          });
         },
         (error) => {
           alert("Failed to send email. Error: " + JSON.stringify(error));
         }
       );
+  };
+
+  // Function to handle input changes
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
   };
 
   return (
@@ -43,6 +67,8 @@ function ContactForm() {
               id="name"
               name="name"
               placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
               required
             />
 
@@ -52,6 +78,8 @@ function ContactForm() {
               id="email"
               name="email"
               placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
               required
             />
 
@@ -60,11 +88,14 @@ function ContactForm() {
               id="message"
               name="message"
               placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
               required
             ></textarea>
 
             <button type="submit">Send</button>
           </form>
+          {successMessage && <p>{successMessage}</p>}
         </div>
       </div>
     </card>
