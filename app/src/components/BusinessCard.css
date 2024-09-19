@@ -18,10 +18,12 @@
 
 .title {
   font-size: 18px;
-  
+  margin: 1.2rem;
 }
+
 .social{
-  margin: 2rem;
+  margin: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 .social a {
