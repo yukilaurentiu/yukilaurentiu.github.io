@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { Link } from "react-router-dom";
 
 function BusinessCard() {
   return (
@@ -28,9 +29,9 @@ function BusinessCard() {
               <a href="https://github.com/yukilaurentiu" target="_blank">
                 <FontAwesomeIcon icon={faGithub} />
               </a>
-              <a href="https://yukilaurentiu.github.io/#/contact">
-              <FontAwesomeIcon icon={faEnvelope} />
-              </a>
+              <Link to="/contact">
+               <FontAwesomeIcon icon={faEnvelope} />
+              </Link>
             </div>
           </div>
         </div>
