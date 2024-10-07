@@ -11,8 +11,8 @@
 }
 
 h1 {
-  margin: 3rem;
-}
+  padding: 3rem;
+} 
 
 .App-p p {
   font-size: 1.2rem;
@@ -69,3 +69,4 @@ button {
 button:hover {
   background-color: #36312d;
 }
+

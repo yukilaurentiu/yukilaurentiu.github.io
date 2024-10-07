@@ -52,12 +52,12 @@ function ContactForm() {
   return (
     <card className="App-card">
       <div class="card-container">
-        <div className="contact-box">
+         <div className="contact-box">
           <h1>Get in touch 👋</h1>
           <div className="App-p">
             <p>Feel free to send me a message.</p>
             <p>I would love to hear from you!</p>
-          </div>
+          </div> 
         </div>
         <div className="contact-box">
           <form onSubmit={handleSubmit} className="Contact-form">
@@ -96,7 +96,7 @@ function ContactForm() {
             <button type="submit">Send</button>
           </form>
           {successMessage && <p>{successMessage}</p>}
-        </div>
+        </div> 
       </div>
     </card>
   );
