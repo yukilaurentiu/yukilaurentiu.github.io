@@ -33,6 +33,25 @@
   text-decoration: none;
 }
 
+.btn-container button {
+  padding: 10px 20px; /* Adjust the values as needed */
+  margin: 5px; /* Optional: adds space between buttons */
+  border: none; /* Optional: removes the default border */
+  color: white; /* Optional: sets text color */
+  cursor: pointer; /* Optional: changes cursor to pointer on hover */
+  border-radius: 5px; 
+  font-size: 16px;
+}
+
+#jp-button {
+  font-size: 13px; /* Font size for the Japanese button */
+}
+
+.btn-container button:hover {
+  background-color: #0056b3; /* Optional: changes background color on hover */
+}
+
+
 /* Mobile styles */
 @media only screen and (max-width: 768px) {
   .avatar {
