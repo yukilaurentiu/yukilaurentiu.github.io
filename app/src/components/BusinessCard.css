@@ -34,21 +34,22 @@
 }
 
 .btn-container button {
-  padding: 10px 20px; /* Adjust the values as needed */
-  margin: 5px; /* Optional: adds space between buttons */
-  border: none; /* Optional: removes the default border */
-  color: white; /* Optional: sets text color */
-  cursor: pointer; /* Optional: changes cursor to pointer on hover */
+  padding: 10px 20px; 
+  margin: 5px; 
+  border: none; 
+  color: var(--bg-color); 
+  cursor: pointer;
   border-radius: 5px; 
   font-size: 16px;
+  font-family: source-code-pro;
 }
 
 #jp-button {
-  font-size: 13px; /* Font size for the Japanese button */
+  font-size: 14px; 
 }
 
 .btn-container button:hover {
-  background-color: #0056b3; /* Optional: changes background color on hover */
+  background-color: #201d1b; 
 }
 
 

@@ -21,7 +21,7 @@ body, html {
 }
 
 .App-card {
-  background-color: var(--background-color);
+  background-color: var(--bg-color);
   width: 50rem;
   margin: 5rem;
   border-radius: 15px;

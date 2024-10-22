@@ -18,7 +18,7 @@ function BusinessCard() {
             <h4 className="name">
               <b>Yukiko Laurentiu</b>
             </h4>
-            <p className="title">Fullstack Developer</p>
+            <p className="title">Full Stack Developer</p>
             <div className="social">
               <a
                 href="https://www.linkedin.com/in/yukikolaurentiu"
@@ -35,7 +35,7 @@ function BusinessCard() {
             </div>
           </div>
           <div className="btn-container">
-            <button type="button" onClick={() => window.open('/docs/YukikoLaurentiu-CV.pdf', '_blank')}>CV</button>
+            <button type="button" onClick={() => window.open('/docs/YukikoLaurentiuCV.pdf', '_blank')}>CV</button>
             <button type="button" id="jp-button" onClick={() => window.open('/docs/ラウレンチウ履歴書.pdf', '_blank')}>履歴書</button>
           </div>
 
