@@ -4,8 +4,7 @@ function Example() {
 
   return (
    <div>
-    Example
-    placeholder
+    <h3>Coming soon...</h3>
    </div>
   );
 }

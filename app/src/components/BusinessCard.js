@@ -35,10 +35,18 @@ function BusinessCard() {
             </div>
           </div>
           <div className="btn-container">
-            <button type="button" onClick={() => window.open('/docs/YukikoLaurentiu-cv.pdf', '_blank')}>CV</button>
-            <button type="button" id="jp-button" onClick={() => window.open('/docs/ラウレンチウ履歴書.pdf', '_blank')}>履歴書</button>
-          </div>
+          <Link to="/">
+            <button type="button">Go to Portfolio</button>
+          </Link>
+          {/* TODO */}
+            {/* <a
+              href="https://www.linkedin.com/in/yukikolaurentiu"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button type="button">Go to Portfolio</button>
+            </a> */}
 
+          </div>
         </div>
       </div>
     </card>

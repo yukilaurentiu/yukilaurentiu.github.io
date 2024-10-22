@@ -33,6 +33,11 @@
   text-decoration: none;
 }
 
+.social a:hover {
+  color: #201d1b;  
+  
+}
+
 .btn-container button {
   padding: 10px 20px; 
   margin: 5px; 
@@ -42,10 +47,6 @@
   border-radius: 5px; 
   font-size: 16px;
   font-family: source-code-pro;
-}
-
-#jp-button {
-  font-size: 14px; 
 }
 
 .btn-container button:hover {
@@ -78,7 +79,9 @@
       font-size: 25px;
   }
 
+  h1 {
+    padding: 1rem;
+  } 
+
 }
-
-
 
