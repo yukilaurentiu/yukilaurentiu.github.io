@@ -35,7 +35,7 @@ function BusinessCard() {
             </div>
           </div>
           <div className="btn-container">
-            <button type="button" onClick={() => window.open('/docs/YukikoLaurentiuCV.pdf', '_blank')}>CV</button>
+            <button type="button" onClick={() => window.open('/docs/YukikoLaurentiu-cv.pdf', '_blank')}>CV</button>
             <button type="button" id="jp-button" onClick={() => window.open('/docs/ラウレンチウ履歴書.pdf', '_blank')}>履歴書</button>
           </div>
 
